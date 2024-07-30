@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title> Student Admision Form </title>
+        <link rel = "stylesheet" href = "form.css">
+        <script>
+            function validateForm() {
+
+            }
+            function resetForm() {
+                document.getElementById("myForm").reset();
+            }
+        </script>
+    </head>
+    <body class = "bg-lightgreen">
+        <h1 class = "margin padding bg-skyblue"> Student Admission Form </h1>
+        <form id="myForm">
+            <div class = "margin padding form-group">
+                <label>
+                    First Name:
+                </label>
+                <input id = "firstName" type = "text" placeholder = "Enter First Name" size = 30px required onkeydown="return /[a-zA-Z]/i.test(event.key)">
+            </div>
+            <div class = "margin padding form-group">
+                <label>
+                    Last Name:
+                </label>
+                <input type = "text" placeholder = "Enter Last Name" size = 30px required onkeydown="return /[a-zA-Z]/i.test(event.key)">
+            </div>
+            <div class = "margin padding form-group">
+                <label>
+                    Email:
+                </label>
+                <input type = "email" placeholder = "Enter Email" size = 40px required>
+            </div>
+            <div class = "margin padding form-group">
+                <label>
+                    Phone:
+                </label>
+                <input type = "number" placeholder = "Enter 10 Digit Phone" size = 40px maxlength="10" onkeydown="return /[0-9]/i.test(event.key)">
+            </div>
+            <div class = "margin padding form-group">
+                <label>
+                    Gender:
+                </label>
+                <label>
+                    <input type = "radio" name = "Gender" value = "Male"> Male
+                </label>
+                <label>
+                    <input type = "radio" name = "Gender" value = "Female"> Female
+                </label>
+                <label>
+                    <input type = "radio" name = "Gender" value = "Others"> Others
+                </label>
+            </div>
+            <div class = "margin padding form-group">
+                <label>
+                    Subjects:
+                </label>
+                <input type = "checkbox" id = "Hindi">
+                <label for = "Hindi">Hindi</label>
+                <input type = "checkbox" id = "English">
+                <label for = "English">English</label>
+                <input type = "checkbox" id = "Marathi">
+                <label for = "Marathi">Marathi</label>
+                <input type = "checkbox" id = "Science">
+                <label for = "Science">Science</label>
+                <input type = "checkbox" id = "Maths">
+                <label for = "Maths">Maths</label>
+                <input type = "checkbox" id = "Humanities">
+                <label for = "Humanities">Humanities</label>
+            </div>
+            <div class = "margin paddin form-group">
+                <label>
+                    Address 1:
+                </label>
+                <input type = "text" placeholder = "Flat no, building or plot no." required>
+            </div>
+            <div class = "margin padding form-group">
+                <label>
+                    Address 2:
+                </label>
+                <input type = "text" placeholder = "Street, locality" required>
+            </div>
+            <div class = "margin padding form-group">
+                <label>
+                    City:
+                </label>
+                <input type = "text" placeholder = "Enter City" size = 40px required onkeydown="return /[a-zA-Z]/i.test(event.key)">
+            </div>
+            <div class = "margin padding form-group">
+                <label for = "State">
+                    State:
+                </label>
+                <select name = "State" id = "State" width = 40px>
+                    <option value = "Maharashtra"> Maharashtra </option>
+                    <option value = "Karnataka"> Karnataka </option>
+                    <option value = "Delhi"> Delhi </option>
+                    <option value = "Tamilnadu"> Tamilnadu </option>
+                    <option value = "Telangana"> Telangana </option>
+                    <option value = "Andhra Pradesh"> Andhra Pradesh </option>            
+                    <option value = "Rajasthan"> Rajasthan </option>
+                    <option value = "Uttarpradesh"> Uttarpradesh </option>
+                    <option value = "West Bengal"> West Bengal </option>
+                </select>
+            </div>
+            <div class = "margin padding form-group height-30 width-100">
+                <label>
+                    Additional Comments:
+                </label>
+                </br>
+                <input type = "text" placeholder = "Enter comments here" class = "height-30 width-60">
+            </div>
+            <div class = "margin padding form-group">
+                <button type = "submit" onclick="resetForm()"> Submit </button>
+            </div>
+        </form>
+    </body>
+</html>    
